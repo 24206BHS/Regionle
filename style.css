@@ -25,7 +25,7 @@ img {
     color: lightgrey;
     text-align: left;
     position: relative;
-    padding: 1rem 4rem;
+    padding: 1em 4em;
 }
 
 /* BIG text styling for the hero section text */
@@ -35,21 +35,21 @@ img {
 }
 
 /* Three column grid with a nice big gap */
-.topic-content{
+.game-column{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 6em;
-    width: 50%;
+    grid-template-rows: 1fr;
+    gap: 0;
+    width: 40%;
     /* top margin of 3em and center right/left */
     margin: 0 auto;
     background-color: darkblue;
 }
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
-.topic-card{
+.game-box{
     background-color: darkblue;
     color: white;
-    padding: 5em;
+    padding: 3em;
     border-radius: 0.5em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
