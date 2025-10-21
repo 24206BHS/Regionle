@@ -39,7 +39,7 @@ img {
     display: grid;
     grid-template-rows: 1fr;
     gap: 0;
-    width: 40%;
+    width: 50%;
     /* top margin of 3em and center right/left */
     margin: 0 auto;
     background-color: darkblue;
