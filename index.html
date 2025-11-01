@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js"></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 50%; }
+    </style>
 </head>
 <!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
 <body>
@@ -30,22 +34,17 @@
                         container: 'map',
                         style: 'mapbox://styles/gibbob/cmh0a7ko700au01st7m9g31qb', // Use the standard style for the map
                         projection: 'globe', // display the map as a globe
-                        zoom: 1, // initial zoom level, 0 is the world view, higher values zoom in
+                        zoom: 2, // initial zoom level, 0 is the world view, higher values zoom in
                         center: [30, 15] // center the map on this longitude and latitude
                     });
 
                     map.addControl(new mapboxgl.NavigationControl());
-                    map.scrollZoom.disable();
-
-                    map.on('style.load', () => {
-                        map.setFog({}); // Set the default atmosphere style
-                    });
                 </script>
             </div>
         </div>
     </section>
     <footer class="footer">
-        <p>&copy; 2025 Regionle by Daniel McGowan</p>
+        <p>&copy; 2025 Daniel McGowan</p>
     </footer>
 
 <!-- The end of the whole page- no more content after this! -->
